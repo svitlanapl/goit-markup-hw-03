@@ -31,6 +31,11 @@ body {
   background-color: #fff;
   color: var();
 }
+img {
+  display: block;
+  max-width: auto;
+  height: auto;
+}
 .list {
   list-style: none;
   padding: 0;
@@ -57,7 +62,7 @@ body {
   display: flex;
   align-items: center;
 }
-.container-nav {
+.nav {
   display: flex;
   align-items: center;
 }
@@ -105,6 +110,9 @@ body {
   margin-right: 50px;
 }
 .contacts-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -198,15 +206,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-/* -----------------------------SECTION------------------------------ */
-.section-list {
+/* -----------------------------SERVICES------------------------------ */
+.services {
+  padding-top: 0;
+}
+.services-list {
   display: flex;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section-title {
+.services-title {
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -215,10 +222,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
-.section-item + .section-item {
+.services-item + .services-item {
   margin-left: 30px;
 }
 /* -----------------------------TEAM--------------------------------- */
+.team section {
+  background-color: var(--second-btn-background-color);
+}
+.container-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-list {
   display: flex;
 }
@@ -226,6 +240,9 @@ body {
   margin-left: 30px;
 }
 .team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   width: 270px;
 }
 .team-title {
@@ -262,11 +279,8 @@ body {
   background-color: var(--main-background-color);
 }
 .footer-logo {
+  display: inline-block;
   margin-bottom: 20px;
-}
-.footer-link,
-.footer-link-mail {
-  margin-bottom: 9px;
 }
 .footer-logo-second {
   font-family: "Raleway";
@@ -300,6 +314,9 @@ body {
 .footer-link-tel:hover,
 .footer-link-tel:focus {
   color: var(--accent-color);
+}
+.footer-item + .footer-item {
+  margin-top: 9px;
 }
 /* -----------------------------PORTFOLIO-----------------------------  */
 .portfolio {
@@ -335,8 +352,7 @@ body {
   background-color: var(--main-btn-background-color);
 }
 .portfolio-title {
-  margin-top: 20px;
-  margin-top: 4px;
+  margin-bottom: 4px;
   text-align: left;
   font-size: 18px;
   line-height: 2;
@@ -358,5 +374,7 @@ body {
 .portfolio-item {
   width: calc(100% / 3-30px);
   margin: 15px;
+}
+.container-portfolio {
   border-bottom: 1px solid #eeeeee;
 }
