@@ -33,7 +33,7 @@ body {
 }
 img {
   display: block;
-  max-width: auto;
+  max-width: 100%;
   height: auto;
 }
 .list {
@@ -55,7 +55,7 @@ img {
   padding-bottom: 94px;
 }
 /* -----------------------------HEADER----------------------------- */
-.container .header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 .main-header {
@@ -226,7 +226,7 @@ img {
   margin-left: 30px;
 }
 /* -----------------------------TEAM--------------------------------- */
-.team section {
+.team {
   background-color: var(--second-btn-background-color);
 }
 .container-team {
@@ -255,7 +255,6 @@ img {
   color: var(--main-title-color);
 }
 .team-title-img {
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 
@@ -376,5 +375,9 @@ img {
   margin: 15px;
 }
 .container-portfolio {
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
